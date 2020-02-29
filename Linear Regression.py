@@ -16,9 +16,9 @@ theta0 = 0
 theta1 = 0
 
 
-iteration = 10000
+iteration = 5000
 
-a = 0.008
+a = 0.02
 x = np.linspace(0, 12,30)
 #print(x)
 y = theta0+theta1*x
@@ -39,8 +39,8 @@ for i in range(iteration):
 
 
 
-    print(c1)
-    if c1 < 0.000001 and c1> -0.000001:
+    print('iteration: ',i,''c1)
+    if c1 < 0.0001 and c1> -0.0001:
     	break
 
 
@@ -63,8 +63,7 @@ print(theta1)
 
 
 
-plt.figure(figsize=(10,12)) #设置画布大小
-figure = plt.subplot(211)  #将画布分成2行1列，当前位于第一块子画板
+plt.figure(figsize=(8,6)) #设置画布大小
 
 plt.scatter(X_train, Y_train,color = 'red')  #描出训练集对应点matplotlib
 x = np.linspace(0, 12,1000)
