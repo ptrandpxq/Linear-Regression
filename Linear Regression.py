@@ -50,16 +50,12 @@ for i in range(iteration):
     theta0 = theta0 - a*(1/len(X_train))*c1
     theta1 = theta1 - a*(1/len(X_train))*c2
 
-   	
-
+  
 
 #print('c2:',c2)
 
 print(theta0)
 print(theta1)
-
-
-
 
 
 
